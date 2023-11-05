@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="parent">
+        <h1>Survey Form</h1>
+        <form action="" name="form" onsubmit="return  ">
+            <div class="c1" >
+                <label for="FNAME" >FIRST NAME:</label>
+                <INPUT TYPE="text" ID="FNAME" placeholder="ENTER THE FIRST NAME" name="FIRST NAME" required>
+            </div>
+            <div>
+                <label for="LNAME" >LAST NAME:</label>
+                <INPUT TYPE="text" ID="LNAME" placeholder="ENTER THE LAST NAME" name="LAST NAME" pattern="[a-z A-Z]{1,20}"required>
+            </div>
+
+            <div>
+                <LABEL for="dob" >DOB:</LABEL>
+                <input type="date" ID="DOB" required >
+            </div>
+            <div>
+                <label for="country">COUNTRY</label>
+                <Select id="country"required>
+                    <option value="none" >-Select-</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="REST OF INDIA">REST OF INDIA</option>
+                </Select>
+            </div>
+
+            <div>
+                <LABEL >GENDER:</LABEL>
+                <input type="radio" name="gender" value="male" id="gender">MALE
+                <input type="radio" name="gender" value="female" id="gender"required>FEMALE
+                <input type="radio" name="gender" value="others" id="gender"required>OTHERS
+            </div>
+            <div>
+                <label for="PRO" >PROFESSION</label>
+                <INPUT TYPE="text" ID="PRO" placeholder="ENTER THE PROFESSION" name="PRO" required>
+            </div>
+
+            <div>
+                <LABEL for="MAIL"required>GMAIL:</LABEL>
+                <input type="email" ID="MAIL"  placeholder="ENTER THE MAILID" name="GMAIL" required>
+            </div>
+
+            <div>
+                <LABEL for="PHNO"required>PHONE NO:</LABEL>
+                <input type="tel" ID="PHNO" maxlength="10" placeholder="ENTER THE PH.NO" name="number" pattern="[6-9]{1}[0-9]{9}"required>
+            </div>
+
+      
+    <div class="child">    
+        <input type="submit" value="Submit" onclick="submit_by_tag()">
+          
+                <input type="Reset" onclick="clear()">
+            </div>
+        </div > 
+        </form>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
